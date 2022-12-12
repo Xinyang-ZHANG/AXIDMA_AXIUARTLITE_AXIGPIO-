@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 30 21:12:15 2022
+# Process ID: 13832
+# Current directory: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6260 D:\Alinx\Alinx7010\Self_learning\axidma_axiuartlite\axidma_axiuartlite.xpr
+# Log file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/vivado.log
+# Journal file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_rx.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_tx.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 928.469 ; gain = 239.793
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_rx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_tx.v] -no_script -reset -force -quiet
+remove_files  {D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_rx.v D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/imports/uart_tx.v}
+open_bd_design {D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M_1
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1110.195 ; gain = 156.449
+startgroup
+set_property -dict [list CONFIG.c_include_mm2s {1} CONFIG.c_include_mm2s_dre {1}] [get_bd_cells axi_dma_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_0
+endgroup
+delete_bd_objs [get_bd_intf_nets axis_data_fifo_0_M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins axis_switch_0/S01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins axis_switch_0/S00_AXIS]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_0]
+endgroup
+connect_bd_net [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_0/In3]
+connect_bd_net [get_bd_pins axis_switch_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axis_switch_0/aresetn] [get_bd_pins rst_ps7_0_100M_1/peripheral_aresetn]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Slave "/processing_system7_0/S_AXI_HP0" intc_ip "/axi_smc" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+</processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_MM2S> at <0x00000000 [ 512M ]>
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1591.793 ; gain = 428.750
+save_bd_design
+Wrote  : <D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+generate_target all [get_files  D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0.hwh
+Generated Block Design Tcl file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0_bd.tcl
+Generated Hardware Definition File d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/synth/system_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_data_fifo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+Exporting to file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/hw_handoff/system_system_ila_0_0.hwh
+Generated Block Design Tcl file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/hw_handoff/system_system_ila_0_0_bd.tcl
+Generated Hardware Definition File d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_0_0/bd_0/synth/system_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/hw_handoff/system_system_ila_1_0.hwh
+Generated Block Design Tcl file d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/hw_handoff/system_system_ila_1_0_bd.tcl
+Generated Hardware Definition File d:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_system_ila_1_0/bd_0/synth/system_system_ila_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1827.008 ; gain = 212.477
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_dma_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all system_xlconcat_0_0] }
+catch { config_ip_cache -export [get_ips -all system_axis_switch_0_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 20 {system_processing_system7_0_0_synth_1 system_xlconcat_0_0_synth_1 system_axi_dma_0_0_synth_1 system_axi_smc_0_synth_1 system_axis_switch_0_0_synth_1 system_auto_pc_0_synth_1}
+[Tue Aug 30 21:21:05 2022] Launched system_processing_system7_0_0_synth_1, system_xlconcat_0_0_synth_1, system_axi_dma_0_0_synth_1, system_axi_smc_0_synth_1, system_axis_switch_0_0_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_processing_system7_0_0_synth_1/runme.log
+system_xlconcat_0_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_xlconcat_0_0_synth_1/runme.log
+system_axi_dma_0_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_axi_dma_0_0_synth_1/runme.log
+system_axi_smc_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_axi_smc_0_synth_1/runme.log
+system_axis_switch_0_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_axis_switch_0_0_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd] -directory D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.ip_user_files/sim_scripts -ip_user_files_dir D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.ip_user_files -ipstatic_source_dir D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.cache/compile_simlib/modelsim} {questa=D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.cache/compile_simlib/questa} {riviera=D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.cache/compile_simlib/riviera} {activehdl=D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/system.bd] -top
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Aug 30 21:21:58 2022] Launched system_axi_dma_0_0_synth_1, system_axi_smc_0_synth_1, system_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+system_axi_dma_0_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_axi_dma_0_0_synth_1/runme.log
+system_axi_smc_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_axi_smc_0_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/system_auto_pc_0_synth_1/runme.log
+synth_1: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/synth_1/runme.log
+[Tue Aug 30 21:21:59 2022] Launched impl_1...
+Run output will be captured here: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/runme.log
+file copy -force D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/system_top.sysdef D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/system_top.sysdef D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+
+launch_sdk -workspace D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk -hwspec D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 30 21:47:27 2022...

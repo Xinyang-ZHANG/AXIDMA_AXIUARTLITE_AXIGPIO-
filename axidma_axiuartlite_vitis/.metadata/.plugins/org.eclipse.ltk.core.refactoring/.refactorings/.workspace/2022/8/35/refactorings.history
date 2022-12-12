@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/system_top" element2="/uartlite_test_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1661390807801"/>&#x0A;<refactoring comment="Delete resource &apos;axidma_axiuartlite_pfm&apos;" deleteContents="true" description="Delete resource &apos;axidma_axiuartlite_pfm&apos;" element1="/axidma_axiuartlite_pfm" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1661398326479"/>
+</session>

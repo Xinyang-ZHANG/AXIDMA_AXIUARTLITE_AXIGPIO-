@@ -1,0 +1,39 @@
+15:57:25 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+In file included from ../src/uartlite_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/uartlite_test.c:88:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12497	    396	     56	  12949	   3295	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+
+15:57:25 Build Finished (took 121ms)
+

@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/boot/zynq_fsbl.elf
+	/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/boot/system.bit
+	/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/boot/u-boot.elf
+}

@@ -1,0 +1,2302 @@
+12:26:19 **** Incremental Build of project axidma_axiuartlite_pfm ****
+buildplatform.sh 46081 axidma_axiuartlite_pfm no_domain_build 
+XSDB Server Channel: tcfchan#4
+12:31:42 **** Build of configuration Debug for project hello ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: hello.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "hello.elf"  ./src/helloworld.o   
+Finished building target: hello.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+    852	    280	      4	   1136	    470	hello.elf
+Finished building: hello.elf.size
+ 
+21:11:36 **** Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+SD data file does not exist: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+make: *** [sd_card] Error 1
+makefile:37: recipe for target 'sd_card' failed
+21:12:17 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+SD data file does not exist: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+makefile:37: recipe for target 'sd_card' failed
+make: *** [sd_card] Error 1
+21:12:34 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+SD data file does not exist: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+makefile:37: recipe for target 'sd_card' failed
+make: *** [sd_card] Error 1
+21:12:44 **** Build of configuration Debug for project hello_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/Debug/hello.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+21:13:01 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+SD data file does not exist: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+makefile:37: recipe for target 'sd_card' failed
+make: *** [sd_card] Error 1
+21:13:24 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+SD data file does not exist: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+makefile:37: recipe for target 'sd_card' failed
+make: *** [sd_card] Error 1
+21:14:20 **** Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/libaxidma.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libaxidma.o" -MMD -MP -MF"src/libaxidma.d" -MT"src/libaxidma.o" -o "src/libaxidma.o" "../src/libaxidma.c"
+Finished building: ../src/libaxidma.c
+ 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c:29:10: fatal error: hal_serial.h: No such file or directory
+ #include "hal_serial.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/serial_port_linux.o' failed
+make: *** [src/serial_port_linux.o] Error 1
+21:15:08 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/time.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/time.o" -MMD -MP -MF"src/time.d" -MT"src/time.o" -o "src/time.o" "../src/time.c"
+Finished building: ../src/time.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10569	    388	     56	  11013	   2b05	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+21:15:14 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+08:01:53 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+08:13:13 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+08:15:15 **** Incremental Build of configuration Debug for project uartlite_test_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/uartlite_test.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+08:16:36 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c:20:10: fatal error: hal_serial.h: No such file or directory
+ #include <hal_serial.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/uartlite_test.o] Error 1
+src/subdir.mk:27: recipe for target 'src/uartlite_test.o' failed
+08:19:41 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:51:42: error: ‘testbuf’ undeclared (first use in this function); did you mean ‘setbuf’?
+   if(SerialPort_write(serial_ttyUL1_ptr, testbuf, 0, 10)==0)
+                                          ^~~~~~~
+                                          setbuf
+../src/uartlite_test.c:51:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/uartlite_test.c:56:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+src/subdir.mk:27: recipe for target 'src/uartlite_test.o' failed
+make: *** [src/uartlite_test.o] Error 1
+08:35:58 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:59:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11161	    396	     56	  11613	   2d5d	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+08:46:09 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:63:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) == -1)
+       ^~~~~~~
+../src/uartlite_test.c:69:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11229	    396	     56	  11681	   2da1	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+09:44:49 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c: In function ‘SerialPort_read’:
+../src/serial_port_linux.c:239:16: warning: returning ‘int’ from a function with return type ‘uint8_t *’ {aka ‘unsigned char *’} makes pointer from integer without a cast [-Wint-conversion]
+         return -1;
+                ^
+../src/serial_port_linux.c:242:16: warning: returning ‘int’ from a function with return type ‘uint8_t *’ {aka ‘unsigned char *’} makes pointer from integer without a cast [-Wint-conversion]
+         return -1;
+                ^
+../src/serial_port_linux.c:244:9: warning: ‘buf’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         read(self->fd, (uint8_t*) buf, len);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:16: warning: implicit declaration of function ‘SerialPort_read’; did you mean ‘SerialPort_create’? [-Wimplicit-function-declaration]
+   if(recvbuf = SerialPort_read(serial_ttyUL1_ptr, 256) == -1){
+                ^~~~~~~~~~~~~~~
+                SerialPort_create
+../src/uartlite_test.c:61:14: error: assignment to expression with array type
+   if(recvbuf = SerialPort_read(serial_ttyUL1_ptr, 256) == -1){
+              ^
+../src/uartlite_test.c:69:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+src/subdir.mk:27: recipe for target 'src/uartlite_test.o' failed
+  int err=0;
+      ^~~
+make: *** [src/uartlite_test.o] Error 1
+09:46:03 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c: In function ‘SerialPort_read’:
+../src/serial_port_linux.c:239:16: warning: returning ‘int’ from a function with return type ‘uint8_t *’ {aka ‘unsigned char *’} makes pointer from integer without a cast [-Wint-conversion]
+         return -1;
+                ^
+../src/serial_port_linux.c:242:16: warning: returning ‘int’ from a function with return type ‘uint8_t *’ {aka ‘unsigned char *’} makes pointer from integer without a cast [-Wint-conversion]
+         return -1;
+                ^
+../src/serial_port_linux.c:244:9: warning: ‘buf’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         read(self->fd, (char*) buf, len);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:16: warning: implicit declaration of function ‘SerialPort_read’; did you mean ‘SerialPort_create’? [-Wimplicit-function-declaration]
+   if(recvbuf = SerialPort_read(serial_ttyUL1_ptr, 256) == -1){
+                ^~~~~~~~~~~~~~~
+                SerialPort_create
+../src/uartlite_test.c:61:14: warning: assignment to ‘uint8_t *’ {aka ‘unsigned char *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   if(recvbuf = SerialPort_read(serial_ttyUL1_ptr, 256) == -1){
+              ^
+../src/uartlite_test.c:61:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(recvbuf = SerialPort_read(serial_ttyUL1_ptr, 256) == -1){
+      ^~~~~~~
+../src/uartlite_test.c:69:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11257	    396	     56	  11709	   2dbd	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+09:52:51 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c:225:9: error: conflicting types for ‘SerialPort_readByte’
+ uint8_t SerialPort_readByte(SerialPort self)
+         ^~~~~~~~~~~~~~~~~~~
+In file included from ../src/serial_port_linux.c:29:
+../src/hal_serial.h:84:1: note: previous declaration of ‘SerialPort_readByte’ was here
+ SerialPort_readByte(SerialPort self);
+ ^~~~~~~~~~~~~~~~~~~
+make: *** [src/serial_port_linux.o] Error 1
+src/subdir.mk:27: recipe for target 'src/serial_port_linux.o' failed
+09:53:26 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:63:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) == -1){
+       ^~~~~~~
+../src/uartlite_test.c:72:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11263	    400	     56	  11719	   2dc7	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+09:54:11 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:63:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) == -1){
+       ^~~~~~~
+../src/uartlite_test.c:72:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11287	    400	     56	  11743	   2ddf	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+09:56:52 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:60:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) != -1){
+      ^~~~~~~
+../src/uartlite_test.c:66:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) == -1){
+       ^~~~~~~
+../src/uartlite_test.c:75:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11407	    400	     56	  11863	   2e57	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+10:08:09 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c: In function ‘UART0_Recv’:
+../src/serial_port_linux.c:249:16: error: ‘FALSE’ undeclared (first use in this function); did you mean ‘FILE’?
+         return FALSE;
+                ^~~~~
+src/subdir.mk:27: recipe for target 'src/serial_port_linux.o' failed
+                FILE
+../src/serial_port_linux.c:249:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/serial_port_linux.c: In function ‘UART0_Send’:
+../src/serial_port_linux.c:274:16: error: ‘FALSE’ undeclared (first use in this function); did you mean ‘FILE’?
+         return FALSE;
+                ^~~~~
+                FILE
+../src/serial_port_linux.c: In function ‘UART0_Recv’:
+../src/serial_port_linux.c:251:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/serial_port_linux.c: In function ‘UART0_Send’:
+../src/serial_port_linux.c:277:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/serial_port_linux.o] Error 1
+10:08:29 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c: In function ‘UART0_Send’:
+../src/serial_port_linux.c:274:16: error: ‘FALSE’ undeclared (first use in this function); did you mean ‘FILE’?
+         return FALSE;
+                ^~~~~
+                FILE
+../src/serial_port_linux.c:274:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/serial_port_linux.c:277:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:27: recipe for target 'src/serial_port_linux.o' failed
+make: *** [src/serial_port_linux.o] Error 1
+10:08:37 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:25: error: ‘fd’ undeclared (first use in this function)
+    int len = UART0_Recv(fd, recvbuf,sizeof(recvbuf));
+                         ^~
+../src/uartlite_test.c:61:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/uartlite_test.c:61:29: warning: pointer targets in passing argument 2 of ‘UART0_Recv’ differ in signedness [-Wpointer-sign]
+    int len = UART0_Recv(fd, recvbuf,sizeof(recvbuf));
+                             ^~~~~~~
+In file included from ../src/uartlite_test.c:20:
+../src/hal_serial.h:79:5: note: expected ‘char *’ but argument is of type ‘uint8_t *’ {aka ‘unsigned char *’}
+ int UART0_Recv(int fd, char *rcv_buf,int data_len);
+     ^~~~~~~~~~
+../src/uartlite_test.c:71:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+src/subdir.mk:27: recipe for target 'src/uartlite_test.o' failed
+../src/uartlite_test.c:28:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/uartlite_test.o] Error 1
+10:11:41 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/time.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/time.o" -MMD -MP -MF"src/time.d" -MT"src/time.o" -o "src/time.o" "../src/time.c"
+../src/time.c:25:10: fatal error: hal_time.h: No such file or directory
+ #include "hal_time.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:27: recipe for target 'src/time.o' failed
+make: *** [src/time.o] Error 1
+10:11:54 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uart.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart.o" -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -o "src/uart.o" "../src/uart.c"
+../src/uart.c:14:9: fatal error: usart.h: No such file or directory
+ #include"usart.h"
+         ^~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/uart.o' failed
+make: *** [src/uart.o] Error 1
+10:12:15 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uart.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart.o" -MMD -MP -MF"src/uart.d" -MT"src/uart.o" -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function ‘UART0_Set’:
+../src/uart.c:81:11: warning: unused variable ‘status’ [-Wunused-variable]
+     int   status;
+           ^~~~~~
+../src/uart.c: In function ‘UART0_Init’:
+../src/uart.c:221:9: warning: unused variable ‘err’ [-Wunused-variable]
+     int err;
+         ^~~
+Finished building: ../src/uart.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:26:2: error: unknown type name ‘uint8_t’; did you mean ‘u_int8_t’?
+  uint8_t recvbuf[256];
+  ^~~~~~~
+  u_int8_t
+../src/uartlite_test.c:27:2: error: unknown type name ‘uint8_t’; did you mean ‘u_int8_t’?
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+  ^~~~~~~
+  u_int8_t
+../src/uartlite_test.c:29:2: error: unknown type name ‘SerialPort’
+  SerialPort serial_ttyUL1_ptr;
+  ^~~~~~~~~~
+../src/uartlite_test.c:30:2: error: unknown type name ‘SerialPort’
+  SerialPort serial_ttyPS1_ptr;
+  ^~~~~~~~~~
+../src/uartlite_test.c:33:22: warning: implicit declaration of function ‘SerialPort_create’ [-Wimplicit-function-declaration]
+  serial_ttyUL1_ptr = SerialPort_create("/dev/ttyUL1", 115200, 8, 0, 1);
+                      ^~~~~~~~~~~~~~~~~
+../src/uartlite_test.c:35:5: warning: implicit declaration of function ‘SerialPort_open’ [-Wimplicit-function-declaration]
+  if(SerialPort_open(serial_ttyUL1_ptr)==false)
+     ^~~~~~~~~~~~~~~
+../src/uartlite_test.c:35:41: error: ‘false’ undeclared (first use in this function); did you mean ‘pause’?
+  if(SerialPort_open(serial_ttyUL1_ptr)==false)
+                                         ^~~~~
+                                         pause
+../src/uartlite_test.c:35:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/uartlite_test.c:60:25: error: ‘fd’ undeclared (first use in this function)
+    int len = UART0_Recv(fd, recvbuf,sizeof(recvbuf));
+                         ^~
+../src/uartlite_test.c:60:29: warning: passing argument 2 of ‘UART0_Recv’ from incompatible pointer type [-Wincompatible-pointer-types]
+    int len = UART0_Recv(fd, recvbuf,sizeof(recvbuf));
+                             ^~~~~~~
+In file included from ../src/uartlite_test.c:20:
+../src/uart.h:36:30: note: expected ‘char *’ but argument is of type ‘int *’
+ int UART0_Recv(int fd, char *rcv_buf,int data_len);
+                        ~~~~~~^~~~~~~
+../src/uartlite_test.c:63:33: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int *’ [-Wformat=]
+        printf("receive data is %s\n",recvbuf);
+                                ~^    ~~~~~~~
+                                %ls
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/uartlite_test.o] Error 1
+src/subdir.mk:24: recipe for target 'src/uartlite_test.o' failed
+10:13:07 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c:32:10: fatal error: usart.h: No such file or directory
+ #include "usart.h"
+          ^~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/uartlite_test.o' failed
+make: *** [src/uartlite_test.o] Error 1
+10:13:29 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/uart.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11703	    408	     64	  12175	   2f8f	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+10:23:07 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/uart.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11297	    400	     64	  11761	   2df1	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+10:23:52 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:62:20: error: ‘argv’ undeclared (first use in this function)
+     if(0 == strcmp(argv[2],"0"))    //开发板向pc发送数据的模式
+                    ^~~~
+../src/uartlite_test.c:62:20: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/uartlite_test.o] Error 1
+src/subdir.mk:24: recipe for target 'src/uartlite_test.o' failed
+10:25:20 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:51:10: warning: unused variable ‘send_buf’ [-Wunused-variable]
+     char send_buf[256];
+          ^~~~~~~~
+../src/uartlite_test.c:49:9: warning: unused variable ‘i’ [-Wunused-variable]
+     int i;
+         ^
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/uart.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10884	    392	     56	  11332	   2c44	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+11:20:24 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+../src/serial_port_linux.c:30:10: fatal error: hal_time.h: No such file or directory
+ #include "hal_time.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/serial_port_linux.o] Error 1
+src/subdir.mk:24: recipe for target 'src/serial_port_linux.o' failed
+11:21:04 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:59:6: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) != -1){
+      ^~~~~~~
+../src/uartlite_test.c:65:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(recvbuf[i] = SerialPort_readByte(serial_ttyUL1_ptr) == -1){
+       ^~~~~~~
+../src/uartlite_test.c:73:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/uartlite_test.o   
+/opt/Xilinx/2019.2/Vitis/2019.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/../lib/gcc/arm-linux-gnueabihf/8.2.0/../../../../arm-linux-gnueabihf/bin/ld: ./src/serial_port_linux.o: in function `SerialPort_write':
+/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/../src/serial_port_linux.c:260: undefined reference to `Hal_getTimeInMs'
+collect2: error: ld returned 1 exit status
+make: *** [uartlite_test.elf] Error 1
+makefile:36: recipe for target 'uartlite_test.elf' failed
+11:21:15 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/uartlite_test.o   
+/opt/Xilinx/2019.2/Vitis/2019.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/../lib/gcc/arm-linux-gnueabihf/8.2.0/../../../../arm-linux-gnueabihf/bin/ld: ./src/serial_port_linux.o: in function `SerialPort_write':
+makefile:36: recipe for target 'uartlite_test.elf' failed
+/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test/Debug/../src/serial_port_linux.c:260: undefined reference to `Hal_getTimeInMs'
+collect2: error: ld returned 1 exit status
+make: *** [uartlite_test.elf] Error 1
+11:22:32 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/time.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/time.o" -MMD -MP -MF"src/time.d" -MT"src/time.o" -o "src/time.o" "../src/time.c"
+Finished building: ../src/time.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11349	    396	     56	  11801	   2e19	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+11:46:33 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:66:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11585	    396	     56	  12037	   2f05	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+11:48:23 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:69:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11645	    396	     56	  12097	   2f41	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+14:45:34 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:79:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:30:10: warning: unused variable ‘recvbuf’ [-Wunused-variable]
+  uint8_t recvbuf[256];
+          ^~~~~~~
+../src/uartlite_test.c:29:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11501	    396	     56	  11953	   2eb1	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+14:46:47 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:79:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:30:10: warning: unused variable ‘recvbuf’ [-Wunused-variable]
+  uint8_t recvbuf[256];
+          ^~~~~~~
+../src/uartlite_test.c:29:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11469	    396	     56	  11921	   2e91	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+14:46:51 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:37 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:79:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:30:10: warning: unused variable ‘recvbuf’ [-Wunused-variable]
+  uint8_t recvbuf[256];
+          ^~~~~~~
+../src/uartlite_test.c:29:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11485	    396	     56	  11937	   2ea1	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+15:32:48 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/gpio_ctrl.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_ctrl.o" -MMD -MP -MF"src/gpio_ctrl.d" -MT"src/gpio_ctrl.o" -o "src/gpio_ctrl.o" "../src/gpio_ctrl.c"
+In file included from ../src/gpio_ctrl.c:1:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/gpio_ctrl.c: In function ‘GPIO_export’:
+../src/gpio_ctrl.c:5:2: error: ‘exportfd’ undeclared (first use in this function); did you mean ‘exportName’?
+  exportfd = open(exportName, O_WRONLY);
+  ^~~~~~~~
+  exportName
+../src/gpio_ctrl.c:5:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/gpio_ctrl.c:5:13: warning: implicit declaration of function ‘open’ [-Wimplicit-function-declaration]
+  exportfd = open(exportName, O_WRONLY);
+             ^~~~
+../src/gpio_ctrl.c:5:30: error: ‘O_WRONLY’ undeclared (first use in this function)
+  exportfd = open(exportName, O_WRONLY);
+                              ^~~~~~~~
+../src/gpio_ctrl.c:8:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   printf("Cannot open GPIO to export it\n");
+   ^~~~~~
+../src/gpio_ctrl.c:8:3: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/gpio_ctrl.c:8:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/gpio_ctrl.c:2:1:
++#include <stdio.h>
+ 
+../src/gpio_ctrl.c:8:3:
+   printf("Cannot open GPIO to export it\n");
+   ^~~~~~
+../src/gpio_ctrl.c:11:2: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+src/subdir.mk:30: recipe for target 'src/gpio_ctrl.o' failed
+  write(exportfd, interfaceNum, 4);
+  ^~~~~
+../src/gpio_ctrl.c:12:2: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+  close(exportfd);
+  ^~~~~
+../src/gpio_ctrl.c:13:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  printf("GPIO exported successfully\n");
+  ^~~~~~
+../src/gpio_ctrl.c:13:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/gpio_ctrl.c: In function ‘GPIO_dirset’:
+../src/gpio_ctrl.c:20:2: error: ‘directionfd’ undeclared (first use in this function); did you mean ‘directionName’?
+  directionfd = open(directionName, O_RDWR);
+  ^~~~~~~~~~~
+  directionName
+../src/gpio_ctrl.c:20:36: error: ‘O_RDWR’ undeclared (first use in this function)
+  directionfd = open(directionName, O_RDWR);
+                                    ^~~~~~
+../src/gpio_ctrl.c:23:3: warning: incompatible implicit declaration of built-in function ‘printf’
+   printf("Cannot open GPIO direction it\n");
+   ^~~~~~
+../src/gpio_ctrl.c:23:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/gpio_ctrl.c:28:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  printf("GPIO direction set as output successfully\n");
+  ^~~~~~
+../src/gpio_ctrl.c:28:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../src/gpio_ctrl.c: In function ‘GPIO_toggle’:
+../src/gpio_ctrl.c:35:2: error: ‘valuefd’ undeclared (first use in this function); did you mean ‘valueName’?
+  valuefd = open(valueName, O_RDWR);
+  ^~~~~~~
+  valueName
+../src/gpio_ctrl.c:35:28: error: ‘O_RDWR’ undeclared (first use in this function)
+  valuefd = open(valueName, O_RDWR);
+                            ^~~~~~
+../src/gpio_ctrl.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/gpio_ctrl.o] Error 1
+15:35:34 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/gpio_ctrl.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_ctrl.o" -MMD -MP -MF"src/gpio_ctrl.d" -MT"src/gpio_ctrl.o" -o "src/gpio_ctrl.o" "../src/gpio_ctrl.c"
+In file included from ../src/gpio_ctrl.c:1:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/gpio_ctrl.c: In function ‘GPIO_export’:
+../src/gpio_ctrl.c:8:2: error: ‘exportfd’ undeclared (first use in this function); did you mean ‘exportName’?
+  exportfd = open(exportName, O_WRONLY);
+  ^~~~~~~~
+  exportName
+../src/gpio_ctrl.c:8:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/gpio_ctrl.c:14:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(exportfd, interfaceNum, 4);
+  ^~~~~
+  fwrite
+../src/gpio_ctrl.c:15:2: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  close(exportfd);
+  ^~~~~
+  pclose
+../src/gpio_ctrl.c: In function ‘GPIO_dirset’:
+../src/gpio_ctrl.c:23:2: error: ‘directionfd’ undeclared (first use in this function); did you mean ‘directionName’?
+  directionfd = open(directionName, O_RDWR);
+  ^~~~~~~~~~~
+  directionName
+../src/gpio_ctrl.c: In function ‘GPIO_toggle’:
+../src/gpio_ctrl.c:38:2: error: ‘valuefd’ undeclared (first use in this function); did you mean ‘valueName’?
+  valuefd = open(valueName, O_RDWR);
+  ^~~~~~~
+  valueName
+../src/gpio_ctrl.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:30: recipe for target 'src/gpio_ctrl.o' failed
+make: *** [src/gpio_ctrl.o] Error 1
+15:36:26 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/gpio_ctrl.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_ctrl.o" -MMD -MP -MF"src/gpio_ctrl.d" -MT"src/gpio_ctrl.o" -o "src/gpio_ctrl.o" "../src/gpio_ctrl.c"
+In file included from ../src/gpio_ctrl.c:1:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/gpio_ctrl.c: In function ‘GPIO_export’:
+../src/gpio_ctrl.c:14:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(exportfd, interfaceNum, 4);
+  ^~~~~
+  fwrite
+../src/gpio_ctrl.c:15:2: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  close(exportfd);
+  ^~~~~
+  pclose
+Finished building: ../src/gpio_ctrl.c
+ 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+In file included from ../src/uartlite_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"1", 2);
+  ^~~~~
+  fwrite
+../src/uartlite_test.c:81:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:26:10: warning: unused variable ‘recvbuf’ [-Wunused-variable]
+  uint8_t recvbuf[256];
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12193	    396	     56	  12645	   3165	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+15:54:42 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+In file included from ../src/uartlite_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/uartlite_test.c:87:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12485	    396	     56	  12937	   3289	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+15:56:44 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+In file included from ../src/uartlite_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/uartlite_test.c:88:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12493	    396	     56	  12945	   3291	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+15:57:25 **** Incremental Build of configuration Debug for project uartlite_test ****
+make all 
+Building file: ../src/uartlite_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartlite_test.o" -MMD -MP -MF"src/uartlite_test.d" -MT"src/uartlite_test.o" -o "src/uartlite_test.o" "../src/uartlite_test.c"
+In file included from ../src/uartlite_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/uartlite_test.c: In function ‘main’:
+../src/uartlite_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/uartlite_test.c:88:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/uartlite_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/uartlite_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/uartlite_test.c
+ 
+Building target: uartlite_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "uartlite_test.elf"  ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o ./src/uartlite_test.o   
+Finished building target: uartlite_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size uartlite_test.elf  |tee "uartlite_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12497	    396	     56	  12949	   3295	uartlite_test.elf
+Finished building: uartlite_test.elf.size
+ 
+15:48:40 **** Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:61:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:88:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:27:10: warning: unused variable ‘testbuf’ [-Wunused-variable]
+  uint8_t testbuf[10] = {9,8,7,6,5,4,3,2,1,0};
+          ^~~~~~~
+../src/dma_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building file: ../src/gpio_ctrl.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_ctrl.o" -MMD -MP -MF"src/gpio_ctrl.d" -MT"src/gpio_ctrl.o" -o "src/gpio_ctrl.o" "../src/gpio_ctrl.c"
+In file included from ../src/gpio_ctrl.c:1:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/gpio_ctrl.c: In function ‘GPIO_export’:
+../src/gpio_ctrl.c:14:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(exportfd, interfaceNum, 4);
+  ^~~~~
+  fwrite
+../src/gpio_ctrl.c:15:2: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+  close(exportfd);
+  ^~~~~
+  pclose
+Finished building: ../src/gpio_ctrl.c
+ 
+Building file: ../src/libaxidma.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/libaxidma.o" -MMD -MP -MF"src/libaxidma.d" -MT"src/libaxidma.o" -o "src/libaxidma.o" "../src/libaxidma.c"
+Finished building: ../src/libaxidma.c
+ 
+Building file: ../src/serial_port_linux.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/serial_port_linux.o" -MMD -MP -MF"src/serial_port_linux.d" -MT"src/serial_port_linux.o" -o "src/serial_port_linux.o" "../src/serial_port_linux.c"
+Finished building: ../src/serial_port_linux.c
+ 
+Building file: ../src/time.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/time.o" -MMD -MP -MF"src/time.d" -MT"src/time.o" -o "src/time.o" "../src/time.c"
+Finished building: ../src/time.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12496	    396	     56	  12948	   3294	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+15:53:34 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:28:4: error: unknown type name ‘axidma_dev_t’
+    axidma_dev_t axidma_dev;
+    ^~~~~~~~~~~~
+../src/dma_test.c:29:8: error: unknown type name ‘array_t’
+  const array_t *rx_chans;
+        ^~~~~~~
+../src/dma_test.c:67:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:98:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:31:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:30:8: warning: unused variable ‘axidma_buf’ [-Wunused-variable]
+  void *axidma_buf;
+        ^~~~~~~~~~
+../src/dma_test.c:29:17: warning: unused variable ‘rx_chans’ [-Wunused-variable]
+  const array_t *rx_chans;
+                 ^~~~~~~~
+../src/dma_test.c:28:17: warning: unused variable ‘axidma_dev’ [-Wunused-variable]
+    axidma_dev_t axidma_dev;
+                 ^~~~~~~~~~
+../src/dma_test.c:25:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/dma_test.o] Error 1
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+15:54:50 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:99:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:31:8: warning: unused variable ‘axidma_buf’ [-Wunused-variable]
+  void *axidma_buf;
+        ^~~~~~~~~~
+../src/dma_test.c:30:17: warning: unused variable ‘rx_chans’ [-Wunused-variable]
+  const array_t *rx_chans;
+                 ^~~~~~~~
+../src/dma_test.c:29:17: warning: unused variable ‘axidma_dev’ [-Wunused-variable]
+    axidma_dev_t axidma_dev;
+                 ^~~~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12460	    396	     56	  12912	   3270	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+15:56:52 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:86:9: error: ‘i’ undeclared (first use in this function)
+     for(i=0;i<rx_chans->len;i++)
+         ^
+../src/dma_test.c:86:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/dma_test.c:91:6: error: ‘axi_dma_buf’ undeclared (first use in this function); did you mean ‘axidma_buf’?
+  if (axi_dma_buf== NULL) {
+      ^~~~~~~~~~~
+      axidma_buf
+../src/dma_test.c:94:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:94:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:31:8: warning: variable ‘axidma_buf’ set but not used [-Wunused-but-set-variable]
+  void *axidma_buf;
+        ^~~~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+make: *** [src/dma_test.o] Error 1
+15:57:15 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12895	    400	     56	  13351	   3427	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:00:27 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:125:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:125:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:128:3: error: ‘ret’ undeclared (first use in this function); did you mean ‘getw’?
+   ret = axidma_oneway_transfer(axidma_dev,rx_chans->data[0],axidma_buf,256,1);//最后一个参数为true表示该函数阻塞，若为false则为非阻塞，用户需要自己注册一个回调函数
+   ^~~
+   getw
+../src/dma_test.c:128:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/dma_test.c:132:57: error: ‘len’ undeclared (first use in this function)
+   if(SerialPort_write(serial_ttyUL1_ptr, axidma_buf, 0, len)==0)
+                                                         ^~~
+../src/dma_test.c:140:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/dma_test.o] Error 1
+16:01:52 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:126:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:126:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:129:3: error: ‘ret’ undeclared (first use in this function)
+   ret = axidma_oneway_transfer(axidma_dev,rx_chans->data[0],axidma_buf,256,1);//最后一个参数为true表示该函数阻塞，若为false则为非阻塞，用户需要自己注册一个回调函数
+   ^~~
+../src/dma_test.c:129:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/dma_test.c:141:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/dma_test.o] Error 1
+16:07:25 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13151	    400	     56	  13607	   3527	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:07:47 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13151	    400	     56	  13607	   3527	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:14:27 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:146:31: warning: dereferencing ‘void *’ pointer
+      printf("%x\n", axidma_buf[i]);
+                               ^
+../src/dma_test.c:146:31: error: invalid use of void expression
+      printf("%x\n", axidma_buf[i]);
+                     ~~~~~~~~~~^~~
+../src/dma_test.c:148:30: warning: dereferencing ‘void *’ pointer
+      printf("%x ", axidma_buf[i]);
+                              ^
+../src/dma_test.c:148:30: error: invalid use of void expression
+      printf("%x ", axidma_buf[i]);
+                    ~~~~~~~~~~^~~
+../src/dma_test.c:32:11: warning: unused variable ‘axi_buff’ [-Wunused-variable]
+  uint32_t axi_buff[256/sizeof(uint32_t)];
+           ^~~~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+      ^~~
+make: *** [src/dma_test.o] Error 1
+16:16:57 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:135:3: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+   memcpy(axidma_data,axidma_buf,256);
+   ^~~~~~
+../src/dma_test.c:135:3: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:135:3: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:135:3:
+   memcpy(axidma_data,axidma_buf,256);
+   ^~~~~~
+../src/dma_test.c:136:26: error: ‘axi_dma_buf’ undeclared (first use in this function); did you mean ‘axidma_buf’?
+   axidma_free(axidma_dev,axi_dma_buf,AXI_DMA_BUFF_SIZE);//释放DMA内存
+                          ^~~~~~~~~~~
+src/subdir.mk:30: recipe for target 'src/dma_test.o' failed
+                          axidma_buf
+../src/dma_test.c:136:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/dma_test.c:136:38: error: ‘AXI_DMA_BUFF_SIZE’ undeclared (first use in this function); did you mean ‘AXIDMA_WRITE’?
+   axidma_free(axidma_dev,axi_dma_buf,AXI_DMA_BUFF_SIZE);//释放DMA内存
+                                      ^~~~~~~~~~~~~~~~~
+                                      AXIDMA_WRITE
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+make: *** [src/dma_test.o] Error 1
+16:17:06 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:135:3: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+   memcpy(axidma_data,axidma_buf,256);
+   ^~~~~~
+../src/dma_test.c:135:3: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:135:3: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:135:3:
+   memcpy(axidma_data,axidma_buf,256);
+   ^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13359	    400	     56	  13815	   35f7	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:29:45 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:122:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+../src/dma_test.c:129:4: warning: incompatible implicit declaration of built-in function ‘exit’
+    exit(-1);
+    ^~~~
+../src/dma_test.c:129:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:135:3: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+   memcpy(axidma_data,axidma_buf,len);
+   ^~~~~~
+../src/dma_test.c:135:3: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:135:3: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:135:3:
+   memcpy(axidma_data,axidma_buf,len);
+   ^~~~~~
+../src/dma_test.c:155:43: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+    if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, len)==0)
+                                           ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13363	    400	     56	  13819	   35fb	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:37:36 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+     exit(-1);
+     ^~~~
+../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+    memcpy(axidma_data,axidma_buf,len);
+    ^~~~~~
+../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:136:4:
+    memcpy(axidma_data,axidma_buf,len);
+    ^~~~~~
+../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, len)==0)
+                                            ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13375	    400	     56	  13831	   3607	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:47:22 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+     exit(-1);
+     ^~~~
+../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:136:4:
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, len)==0)
+                                            ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13403	    400	     56	  13859	   3623	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:50:21 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+     exit(-1);
+     ^~~~
+../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:136:4:
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 2, len+2)==0)
+                                            ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13407	    400	     56	  13863	   3627	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:51:39 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+     exit(-1);
+     ^~~~
+../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:136:4:
+    memcpy(axidma_data,axidma_buf,4*(len+3));
+    ^~~~~~
+../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, 4*(len+3))==0)
+                                            ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13411	    400	     56	  13867	   362b	dma_test.elf
+Finished building: dma_test.elf.size
+ 
+16:55:51 **** Incremental Build of configuration Debug for project dma_test ****
+make all 
+Building file: ../src/dma_test.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+In file included from ../src/dma_test.c:21:
+../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+ #endif GPIO_CTRL_H_
+        ^~~~~~~~~~~~
+../src/dma_test.c: In function ‘main’:
+../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+  write(valuefd,"0", 2);
+  ^~~~~
+  fwrite
+../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(-1);
+   ^~~~
+../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:23:1:
++#include <stdlib.h>
+ 
+../src/dma_test.c:75:3:
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+   exit(-1);
+   ^~~~
+../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+    sleep(1);
+    ^~~~~
+../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+     exit(-1);
+     ^~~~
+../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+    memcpy(axidma_data,axidma_buf,4*(len+4));
+    ^~~~~~
+../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+../src/dma_test.c:23:1:
++#include <string.h>
+ 
+../src/dma_test.c:136:4:
+    memcpy(axidma_data,axidma_buf,4*(len+4));
+    ^~~~~~
+../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, 4*(len+4))==0)
+                                            ^~~~~~~~~~~
+In file included from ../src/dma_test.c:20:
+../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+ SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+                                   ~~~~~~~~~^~~~~~
+../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+  int err=0;
+      ^~~
+Finished building: ../src/dma_test.c
+ 
+Building target: dma_test.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+Finished building target: dma_test.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13411	    400	     56	  13867	   362b	dma_test.elf
+Finished building: dma_test.elf.size
+ 

@@ -1,0 +1,77 @@
+2022-09-12T16:55:51.95685800255-16:55:51 **** Incremental Build of configuration Debug for project dma_test ****
+000-make all 
+000-Building file: ../src/dma_test.c
+000-Invoking: ARM v7 Linux gcc compiler
+000-arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_test.o" -MMD -MP -MF"src/dma_test.d" -MT"src/dma_test.o" -o "src/dma_test.o" "../src/dma_test.c"
+000-In file included from ../src/dma_test.c:21:
+000/dma_test/src/gpio_ctrl.h13-1-1extra tokens at end of #endif directive [-Wendif-labels]1-../src/gpio_ctrl.h:13:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+000- #endif GPIO_CTRL_H_
+000-        ^~~~~~~~~~~~
+000-../src/dma_test.c: In function ‘main’:
+000/dma_test/src/dma_test.c68-1-1implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]1-../src/dma_test.c:68:2: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+000-  write(valuefd,"0", 2);
+000-  ^~~~~
+000-  fwrite
+000/dma_test/src/dma_test.c75-1-1implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]1-../src/dma_test.c:75:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+000-   exit(-1);
+000-   ^~~~
+000/dma_test/src/dma_test.c75-1-1incompatible implicit declaration of built-in function ‘exit’1-../src/dma_test.c:75:3: warning: incompatible implicit declaration of built-in function ‘exit’
+000/dma_test/src/dma_test.c75-1-1include ‘<stdlib.h>’ or provide a declaration of ‘exit’0-../src/dma_test.c:75:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+000-../src/dma_test.c:23:1:
+000-+#include <stdlib.h>
+000- 
+000-../src/dma_test.c:75:3:
+000-   exit(-1);
+000-   ^~~~
+000/dma_test/src/dma_test.c83-1-1incompatible implicit declaration of built-in function ‘exit’1-../src/dma_test.c:83:3: warning: incompatible implicit declaration of built-in function ‘exit’
+000-   exit(-1);
+000-   ^~~~
+000/dma_test/src/dma_test.c83-1-1include ‘<stdlib.h>’ or provide a declaration of ‘exit’0-../src/dma_test.c:83:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+000/dma_test/src/dma_test.c95-1-1incompatible implicit declaration of built-in function ‘exit’1-../src/dma_test.c:95:3: warning: incompatible implicit declaration of built-in function ‘exit’
+000-   exit(-1);
+000-   ^~~~
+000/dma_test/src/dma_test.c95-1-1include ‘<stdlib.h>’ or provide a declaration of ‘exit’0-../src/dma_test.c:95:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+000/dma_test/src/dma_test.c123-1-1implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]1-../src/dma_test.c:123:4: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+000-    sleep(1);
+000-    ^~~~~
+000/dma_test/src/dma_test.c130-1-1incompatible implicit declaration of built-in function ‘exit’1-../src/dma_test.c:130:5: warning: incompatible implicit declaration of built-in function ‘exit’
+000-     exit(-1);
+000-     ^~~~
+000/dma_test/src/dma_test.c130-1-1include ‘<stdlib.h>’ or provide a declaration of ‘exit’0-../src/dma_test.c:130:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+000/dma_test/src/dma_test.c136-1-1implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]1-../src/dma_test.c:136:4: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+000-    memcpy(axidma_data,axidma_buf,4*(len+4));
+000-    ^~~~~~
+000/dma_test/src/dma_test.c136-1-1incompatible implicit declaration of built-in function ‘memcpy’1-../src/dma_test.c:136:4: warning: incompatible implicit declaration of built-in function ‘memcpy’
+000/dma_test/src/dma_test.c136-1-1include ‘<string.h>’ or provide a declaration of ‘memcpy’0-../src/dma_test.c:136:4: note: include ‘<string.h>’ or provide a declaration of ‘memcpy’
+000-../src/dma_test.c:23:1:
+000-+#include <string.h>
+000- 
+000-../src/dma_test.c:136:4:
+000-    memcpy(axidma_data,axidma_buf,4*(len+4));
+000-    ^~~~~~
+000/dma_test/src/dma_test.c156-1-1passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]1-../src/dma_test.c:156:44: warning: passing argument 2 of ‘SerialPort_write’ from incompatible pointer type [-Wincompatible-pointer-types]
+000-     if(SerialPort_write(serial_ttyUL1_ptr, axidma_data, 0, 4*(len+4))==0)
+000-                                            ^~~~~~~~~~~
+000-In file included from ../src/dma_test.c:20:
+000/dma_test/src/hal_serial.h98-1-1expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}0-../src/hal_serial.h:98:44: note: expected ‘uint8_t *’ {aka ‘unsigned char *’} but argument is of type ‘uint32_t *’ {aka ‘unsigned int *’}
+000- SerialPort_write(SerialPort self, uint8_t* buffer, int startPos, int numberOfBytes);
+000-                                   ~~~~~~~~~^~~~~~
+000/dma_test/src/dma_test.c26-1-1unused variable ‘err’ [-Wunused-variable]1-../src/dma_test.c:26:6: warning: unused variable ‘err’ [-Wunused-variable]
+000-  int err=0;
+000-      ^~~
+000-Finished building: ../src/dma_test.c
+000- 
+000-Building target: dma_test.elf
+000-Invoking: ARM v7 Linux gcc linker
+000-arm-linux-gnueabihf-gcc  -o "dma_test.elf"  ./src/dma_test.o ./src/gpio_ctrl.o ./src/libaxidma.o ./src/serial_port_linux.o ./src/time.o   
+000-Finished building target: dma_test.elf
+000- 
+000-Invoking: ARM v7 Linux Print Size
+000-arm-linux-gnueabihf-size dma_test.elf  |tee "dma_test.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  13411	    400	     56	  13867	   362b	dma_test.elf
+000-Finished building: dma_test.elf.size
+000- 
+00255-
+16:55:52 Build Finished (took 158ms)
+

@@ -1,0 +1,54 @@
+TRACE::2022-08-29.21:11:40::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:11:40::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:11:40::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:11:40::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:11:40::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:11:40::SCWBifWriter::Device type is : zynq
+TRACE::2022-08-29.21:12:19::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:12:19::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:12:19::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:12:19::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:12:19::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:12:19::SCWBifWriter::Device type is : zynq
+TRACE::2022-08-29.21:12:36::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:12:36::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:12:36::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:12:36::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:12:36::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:12:36::SCWBifWriter::Device type is : zynq
+TRACE::2022-08-29.21:13:03::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:13:03::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:13:03::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:13:03::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:13:03::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:13:03::SCWBifWriter::Device type is : zynq
+TRACE::2022-08-29.21:13:26::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:13:26::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:13:26::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:13:26::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:13:26::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:13:26::SCWBifWriter::Device type is : zynq
+TRACE::2022-08-29.21:15:15::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:15:15::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:15:15::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:15:15::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:15:15::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:15:15::SCWBifWriter::Device type is : zynq
+TRACE::2022-09-11.08:02:08::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-09-11.08:02:09::SCWBifWriter::hardware databse : system_top
+TRACE::2022-09-11.08:02:09::SCWBifWriter::bitstream found in the design
+TRACE::2022-09-11.08:02:09::SCWBifWriter::Found a linux domain
+TRACE::2022-09-11.08:02:09::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-09-11.08:02:09::SCWBifWriter::Device type is : zynq
+TRACE::2022-09-11.08:13:15::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-09-11.08:13:15::SCWBifWriter::hardware databse : system_top
+TRACE::2022-09-11.08:13:15::SCWBifWriter::bitstream found in the design
+TRACE::2022-09-11.08:13:15::SCWBifWriter::Found a linux domain
+TRACE::2022-09-11.08:13:15::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-09-11.08:13:15::SCWBifWriter::Device type is : zynq
+TRACE::2022-09-11.08:15:17::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-09-11.08:15:17::SCWBifWriter::hardware databse : system_top
+TRACE::2022-09-11.08:15:17::SCWBifWriter::bitstream found in the design
+TRACE::2022-09-11.08:15:17::SCWBifWriter::Found a linux domain
+TRACE::2022-09-11.08:15:17::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-09-11.08:15:17::SCWBifWriter::Device type is : zynq

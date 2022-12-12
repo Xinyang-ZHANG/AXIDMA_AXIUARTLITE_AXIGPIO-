@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis" key="bif_file"/>
+	<item value="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite" key="scw_hwspec"/>
+	<item value="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/image" key="platform_editor"/>
+	<item value="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/image" key="linux_image_directory"/>
+	<item value="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/boot" key="boot_components_directory"/>
+</section>

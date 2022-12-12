@@ -1,0 +1,21 @@
+2022-08-25T12:31:42.75267200255-12:31:42 **** Build of configuration Debug for project hello ****
+000-make all 
+000-Building file: ../src/helloworld.c
+000-Invoking: ARM v7 Linux gcc compiler
+000-arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-Finished building: ../src/helloworld.c
+000- 
+000-Building target: hello.elf
+000-Invoking: ARM v7 Linux gcc linker
+000-arm-linux-gnueabihf-gcc  -o "hello.elf"  ./src/helloworld.o   
+000-Finished building target: hello.elf
+000- 
+000-Invoking: ARM v7 Linux Print Size
+000-arm-linux-gnueabihf-size hello.elf  |tee "hello.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-    852	    280	      4	   1136	    470	hello.elf
+000-Finished building: hello.elf.size
+000- 
+00255-
+12:31:44 Build Finished (took 1s.676ms)
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 30 21:25:16 2022
+# Process ID: 16484
+# Current directory: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1
+# Command line: vivado.exe -log system_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+# Log file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/system_top.vdi
+# Journal file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

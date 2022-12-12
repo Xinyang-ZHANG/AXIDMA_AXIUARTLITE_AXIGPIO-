@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Apr  8 21:45:23 2022
+# Process ID: 4368
+# Current directory: D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/axidma_axiuart.runs/rxdata_distmem_synth_1
+# Command line: vivado.exe -log rxdata_distmem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rxdata_distmem.tcl
+# Log file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/axidma_axiuart.runs/rxdata_distmem_synth_1/rxdata_distmem.vds
+# Journal file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuart/axidma_axiuart/axidma_axiuart.runs/rxdata_distmem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rxdata_distmem.tcl -notrace

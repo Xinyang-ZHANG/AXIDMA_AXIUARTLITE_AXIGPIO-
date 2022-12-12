@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  9 19:45:34 2022
+# Process ID: 9500
+# Current directory: F:/Radar/Debug/1550/New/hw/uart_test/axidma_axiuart/axidma_axiuart.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: F:/Radar/Debug/1550/New/hw/uart_test/axidma_axiuart/axidma_axiuart.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: F:/Radar/Debug/1550/New/hw/uart_test/axidma_axiuart/axidma_axiuart.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

@@ -1,0 +1,2 @@
+TRACE::2022-08-25.12:26:20::SCWLinux:: Copying the user libraries. 
+TRACE::2022-08-25.12:26:20::SCWLinux::Skipping the Petalinux build as image is already given.

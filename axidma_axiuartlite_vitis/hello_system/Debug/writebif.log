@@ -1,0 +1,6 @@
+TRACE::2022-08-29.21:12:46::SCWBifWriter::Found the complete platform /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm
+TRACE::2022-08-29.21:12:46::SCWBifWriter::hardware databse : system_top
+TRACE::2022-08-29.21:12:46::SCWBifWriter::bitstream found in the design
+TRACE::2022-08-29.21:12:46::SCWBifWriter::Found a linux domain
+TRACE::2022-08-29.21:12:46::SCWBifWriter::proc type : cortex-a9
+TRACE::2022-08-29.21:12:46::SCWBifWriter::Device type is : zynq

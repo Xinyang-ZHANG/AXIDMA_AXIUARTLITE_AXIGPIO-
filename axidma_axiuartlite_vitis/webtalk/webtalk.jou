@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# 
+# Start of session at: Thu Aug 25 12:35:10 2022
+# Process ID: 27388
+# Current directory: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/webtalk
+# Command line: wbtcv -mode batch -source vitis_webtalk.tcl
+# Log file: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/webtalk/webtalk.log
+# Journal file: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="uartlite_test" location="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/uartlite_test" platform="/home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="uartlite_test_system" sysConfig="axidma_axiuartlite_pfm" runtime="C/C++" cpu="linux_domain" cpuInstance="" os="linux">
+  <configuration name="Debug" id="xilinx.gnu.armv7.linux.exe.debug.1675304593">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.linux.exe.release.703921877" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="linux_hello_world"/>
+</sdkproject:SdkProject>

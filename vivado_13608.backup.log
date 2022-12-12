@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 12 19:00:04 2022
+# Process ID: 13608
+# Current directory: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22880 D:\Alinx\Alinx7010\Self_learning\axidma_axiuartlite\axidma_axiuartlite.xpr
+# Log file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/vivado.log
+# Journal file: D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 995.020 ; gain = 319.301
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/system_top.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'system_wrapper/system_i/system_ila_1/inst/ila_lib' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'system_wrapper/system_i/system_ila_0/inst/ila_lib' from probes file, since it cannot be found on the programmed device.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object system_wrapper/system_i/system_ila_0/inst/net_slot_0_axis_tvalid was not found in the design.
+WARNING: Simulation object system_wrapper/system_i/system_ila_0/inst/net_slot_0_axis_tready was not found in the design.
+WARNING: Simulation object system_wrapper/system_i/system_ila_0/inst/net_slot_0_axis_tlast was not found in the design.
+WARNING: Simulation object system_wrapper/system_i/system_ila_0/inst/net_slot_0_axis_tdata was not found in the design.
+WARNING: Simulation object system_wrapper/system_i/system_ila_0/inst/net_slot_0_axis_tkeep was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Vivado 12-106] *** Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: -1 (See D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/vivado_pid13608.debug)
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes pl_top/rx_data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes pl_top/S_AXIS_0_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {pl_top/S_AXIS_0_tdata} {pl_top/S_AXIS_0_tlast} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u_ila_0_dma_data} {u_ila_0_S_AXIS_0_tvalid} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Sep-12 19:03:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Sep-12 19:03:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/Alinx/Alinx7010/Self_learning/axidma_axiuartlite/axidma_axiuartlite.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 12 19:08:32 2022...

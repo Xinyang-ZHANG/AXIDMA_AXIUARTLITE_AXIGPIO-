@@ -1,0 +1,68 @@
+/*
+
+Xilinx Vitis v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov 6 21:40:25 MST 2019
+
+Process ID (PID): 7438
+License: Customer
+
+Current time: 	Thu Aug 25 12:59:06 BTT 2022
+Time zone: 	Bhutan Time (Asia/Thimphu)
+
+OS: Ubuntu
+OS Version: 4.15.0-191-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :0
+Screen size: 1920x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 278 GB
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/2019.2/Vitis/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/2019.2/Vitis/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 4 GB
+
+Java library paths: /opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o:/opt/Xilinx/2019.2/Vitis/2019.2/tps/lnx64/jre9.0.4/lib/:/opt/Xilinx/2019.2/Vitis/2019.2/tps/lnx64/jre9.0.4/lib//server:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu/18:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/2019.2/Vitis/2019.2/lib/lnx64.o:/opt/Xilinx/2019.2/Vitis/2019.2/runtime/lib/x86_64:/opt/Xilinx/2019.2/Vitis/2019.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/2019.2/Vitis/2019.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+LD_LIBRARY_PATH: /opt/Xilinx/2019.2/Vitis
+
+User name: 	zxy
+User home directory: /home/zxy
+User working directory: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/2019.2/Vitis
+HDI_APPROOT: /opt/Xilinx/2019.2/Vitis/2019.2
+RDI_DATADIR: /opt/Xilinx/2019.2/Vitis/2019.2/data
+RDI_BINDIR: /opt/Xilinx/2019.2/Vitis/2019.2/bin
+
+Vitis preferences directory: /home/zxy/.Xilinx/Vitis/2019.2/
+Vitis workspace directory: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis
+Vitis workspace log file location: /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/.metadata/.log
+Engine tmp dir: 	./.Xil/sdx-7438-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_ENABLE_SCOUT_HLS: 0
+XILINX_HLS: /opt/Xilinx/2019.2/Vivado/2019.2
+XILINX_PLANAHEAD: /opt/Xilinx/2019.2/Vitis/2019.2
+XILINX_SDK: /opt/Xilinx/2019.2/Vitis/2019.2
+XILINX_VITIS: /opt/Xilinx/2019.2/Vitis/2019.2
+XILINX_VIVADO: /opt/Xilinx/2019.2/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/2019.2/Vivado/2019.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+

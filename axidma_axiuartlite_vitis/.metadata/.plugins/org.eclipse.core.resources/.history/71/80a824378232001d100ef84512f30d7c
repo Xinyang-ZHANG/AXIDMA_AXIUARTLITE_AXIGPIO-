@@ -1,0 +1,153 @@
+/*
+ * Copyright (c) 2012 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+#include <stdio.h>
+#include "hal_serial.h"
+#include "gpio_ctrl.h"
+#include "libaxidma.h"
+
+int main()
+{
+	int err=0;
+	uint8_t recvbuf[256];
+
+  	axidma_dev_t axidma_dev;
+	const array_t *rx_chans;
+	void *axidma_buf;
+	uint32_t axi_buff[256/sizeof(uint32_t)];
+
+	SerialPort serial_ttyUL1_ptr;
+	SerialPort serial_ttyPS1_ptr;
+
+
+	//serial port init UARTLITE & UART0_PS
+	serial_ttyUL1_ptr = SerialPort_create("/dev/ttyUL1", 115200, 8, 0, 1);
+
+	if(SerialPort_open(serial_ttyUL1_ptr)==false)
+	{
+	   printf("ttyUL1 Serial port open failed!\n");
+	   return -1;
+	}
+	printf("ttyUL1 Serial port open succeeded!\n");
+
+	serial_ttyPS1_ptr = SerialPort_create("/dev/ttyPS1", 115200, 8, 0, 1);
+
+	if(SerialPort_open(serial_ttyPS1_ptr)==false)
+	{
+	   printf("ttyPS1 Serial port open failed!\n");
+	   return -1;
+	}
+	printf("ttyPS1 Serial port open succeeded!\n");
+
+
+	//GPIO direction control init
+	GPIO_export("/sys/class/gpio/export", "1023");
+	GPIO_dirset("/sys/class/gpio/gpio1023/direction", "out");
+	int valuefd = GPIO_toggle("/sys/class/gpio/gpio1023/value");
+	if(valuefd < 0){
+		printf("Cannot open GPIO value\n");
+	}
+	printf("GPIO value opened, now toggling...\n");
+
+	//GPIO value init
+	write(valuefd,"0", 2);
+
+
+	//AXIDMA init
+	axidma_dev = axidma_init();//初始化DMA设备
+	if (axidma_dev == NULL) {
+		printf("Error: Failed to initialize the AXI DMA device.\n");
+		exit(-1);
+
+	}
+
+	rx_chans = axidma_get_dma_rx(axidma_dev);//从DMA设备获取接收通道
+	if (rx_chans->len < 1) {
+		printf("Error: No receive channels were found.\n");
+		axidma_destroy(axidma_dev);
+		exit(-1);
+	}
+	//print avaliable rx channels
+	int i;
+    for(i=0;i<rx_chans->len;i++)
+	{
+    	printf("INFO: receive channel ID:%d\n",rx_chans->data[i]);
+	}
+	axidma_buf = axidma_malloc(axidma_dev,256);//从DMA设备分配5060字节专用DMA内存
+	if (axidma_buf== NULL) {
+		printf("The DMA buffer malloc_error!\n");
+		axidma_destroy(axidma_dev);
+		exit(-1);
+	}
+
+	while(1)
+	{
+		//receive Serial port
+		int recvlen = SerialPort_read(serial_ttyUL1_ptr, recvbuf, 256);
+		int len;  //data length
+		if(recvlen != -1){
+			printf("UARTLITE RECEIVE DATA LENGTH: %d UARTLITE RECEIVE DATA : \n", recvlen);
+			for(int i=0; i<recvlen; i++){
+				if(i == recvlen-1)
+					printf("%x\n", recvbuf[i]);
+				else
+					printf("%x ", recvbuf[i]);
+			}
+			//read out the second value as length
+			len = recvbuf[1];
+			//GPIO value change
+			write(valuefd,"1", 2);
+			//send Serial port
+			if(SerialPort_write(serial_ttyPS1_ptr, recvbuf, 0, len+2)==0)
+			{
+				printf("ttyPS1 Serial send wrong!");
+			}
+		}
+
+		axidma_buf = axidma_malloc(axidma_dev,256);//从DMA设备分配5060字节专用DMA内存
+		if (axidma_buf== NULL) {
+			printf("The DMA buffer malloc_error!\n");
+			axidma_destroy(axidma_dev);
+			exit(-1);
+		}
+		//AXIDMA transfer
+		int ret = axidma_oneway_transfer(axidma_dev,rx_chans->data[0],axidma_buf,256,1);//最后一个参数为true表示该函数阻塞，若为false则为非阻塞，用户需要自己注册一个回调函数
+		if(ret<0) {
+			printf("received error!\n");
+		    continue;
+		}
+
+		axidma_stop_transfer(axidma_dev,rx_chans->data[0]);
+
+		if(SerialPort_write(serial_ttyUL1_ptr, axidma_buf, 0, len)==0)
+		{
+			printf("ttyUL1 Serial send wrong!");
+		}
+
+		//GPIO value change
+		write(valuefd,"0", 2);
+
+		sleep(1);
+
+	}
+
+	SerialPort_close(serial_ttyUL1_ptr);
+	SerialPort_close(serial_ttyPS1_ptr);
+
+    return 0;
+}

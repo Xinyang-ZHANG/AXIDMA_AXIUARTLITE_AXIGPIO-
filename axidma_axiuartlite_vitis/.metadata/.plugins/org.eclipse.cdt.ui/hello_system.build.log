@@ -1,0 +1,10 @@
+21:12:44 **** Build of configuration Debug for project hello_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm -domains linux_domain -bifpath /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/axidma_axiuartlite_pfm/export/axidma_axiuartlite_pfm/axidma_axiuartlite_pfm.xpfm --sys_config axidma_axiuartlite_pfm --bif /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/system.bif --bitstream /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/_ide/bitstream/system_top.bit --sd_file /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/Debug/hello.elf
+creating BOOT.BIN using /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello/_ide/bitstream/system_top.bit
+Running /opt/Xilinx/2019.2/Vitis/2019.2/bin/bootgen  -image /home/zxy/Documents/zynq7010_axidma_axiuartlite/axidma_axiuartlite_vitis/hello_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+21:12:50 Build Finished (took 6s.94ms)
+
